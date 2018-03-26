@@ -5,26 +5,136 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-        </div>
-        <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-            <div class="col-4"></div>
+
+
+<nav class="navbar navbar-light navbar-expand-md fixed-top navbar-bg-tr">
+    <div class="container-fluid"><a href="#" class="navbar-brand">World Fit Company</a>
+        <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-end"
+             id="navcol-1">
+            <ul class="nav navbar-nav">
+                <li role="presentation" class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li role="presentation" class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li role="presentation" class="nav-item"><a href="#" class="nav-link">Blog</a></li>
+                <li role="presentation" class="nav-item"><a href="#" class="nav-link">Product</a></li>
+                <li role="presentation" class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            </ul>
         </div>
     </div>
+</nav>
+<div data-ride="carousel" class="carousel slide height-vh" id="carousel-1">
+    <div role="listbox" class="carousel-inner">
+        <div class="carousel-item">
+            <img src="img/fitness3.jpg" alt="Slide Image" class="w-100 d-block"/>
+        </div>
+        <div class="carousel-item">
+            <img src="img/fitness2.jpg" alt="Slide Image" class="w-100 d-block"/>
+        </div>
+        <div class="carousel-item active">
+            <img src="img/fitness1.jpg" alt="Slide Image" class="w-100 d-block"/>
+        </div>
+    </div>
+    <div><a href="#carousel-1" role="button" data-slide="prev" class="carousel-control-prev"><span aria-hidden="true"
+                                                                                                   class="carousel-control-prev-icon"></span><span
+            class="sr-only">Previous</span></a><a href="#carousel-1" role="button" data-slide="next"
+                                                  class="carousel-control-next"><span aria-hidden="true"
+                                                                                      class="carousel-control-next-icon"></span><span
+            class="sr-only">Next</span></a></div>
+    <ol class="carousel-indicators">
+        <li data-target="#carousel-1" data-slide-to="0"></li>
+        <li data-target="#carousel-1" data-slide-to="1"></li>
+        <li data-target="#carousel-1" data-slide-to="2" class="active"></li>
+    </ol>
+</div>
+<div class="container">
+    <h1 class="text-center mt-5">About</h1>
+    <article class="text-justify mt-5">
+        <p class="about-text">
+            The vision we at World Fit Company have for people interested in maintaining a healthy
+            lifestyle, is to support them in reaching their goals through our range of innovative dietary supplements. We
+            continuously strive to manufacture leading edge
+            products made from ingredients of a high standard, which will complement your weight loss and fitness
+            regimes.
+        </p>
+        <div class="green-line"></div>
+        <p class="about-text">
+            The World Fit Company dietary supplements have been tested and can be trusted to assist you in
+            calorie burning, fitness,
+            weight maintenance and overall health care. Our products are well known for their formulation using premium
+            ingredients to ensure that you accomplish your weight loss goals, so that we can enable you to improve every
+            aspect of your lifestyle.
+        </p>
+        <div class="green-line"></div>
+        <p class="about-text">
+            The primary supplements we manufacture include shakes as a replacement to meals as well as protein-packed
+            supplements, to assist in weight loss, sports and fitness activities. Whether your target is to perform better,
+            lose weight or
+            bring improvements in your general health – we can help make it all easier to achieve. The effectiveness of our
+            dietary supplements will keep you on the fast track to a healthier, fitter you.
+        </p>
+    </article>
+</div>
+<div>
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-4 text-from-above">
+                <img src="img/fitness4.jpg" class="blog-image"/>
+                <div class="animation-text">
+                    <h3 class="animation-text-heading"> How To Lose Weight Through Fitness </h3>
+                    <div class="animation-read">
+                        <a href="#" class="read-link"> Read </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-from-above">
+                <img src="img/fitness5.jpg" class="blog-image"/>
+                <div class="animation-text">
+                    <h3 class="animation-text-heading"> Workout Routine for Effective Weight Loss </h3>
+                    <div class="animation-read">
+                        <a href="#" class="read-link"> Read </a>
+                    </div>
+                </div></div>
+            <div class="col-md-4 text-from-above">
+                <img src="img/fitness6.jpg" class="blog-image"/>
+                <div class="animation-text">
+                    <h3 class="animation-text-heading"> How To Build Your Muscles </h3>
+                    <div class="animation-read">
+                        <a href="#" class="read-link"> Read </a>
+                    </div>
+                </div></div>
+        </div>
+    </div>
+</div>
+<div class="footer-basic">
+    <footer class="footer-block">
+        <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a class="footer-link" href="#">Home</a></li>
+            <li class="list-inline-item"><a class="footer-link" href="#">About</a></li>
+            <li class="list-inline-item"><a class="footer-link" href="#">Blog</a></li>
+            <li class="list-inline-item"><a class="footer-link" href="#">Product</a></li>
+            <li class="list-inline-item"><a class="footer-link" href="#">Contact</a></li>
+        </ul>
+        <p class="copyright">Company Name © 2018</p>
+    </footer>
+</div>
+
 </body>
 </html>
